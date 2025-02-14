@@ -9,14 +9,14 @@
       [0,0,0,0,0,0]
     ],
     "station_times": {
-      "bangalore": "13:50:00",
-      "jaipur": "13:50:00",
-      "delhi": "13:50:00"
+      "Kolkata": "13:50:00",
+      "Patna": "13:50:00",
+      "Mathura": "13:50:00"
     },
     "stations": [
-      "bangalore",
-      "jaipur",
-      "delhi"
+      "Kolkata",
+      "Patna",
+      "Mathura"
     ]
   },
   {
@@ -29,14 +29,14 @@
       [0,0,0,0,0,0]
     ],
     "station_times": {
-      "bangalore": "13:50:00",
-      "jaipur": "13:50:00",
-      "delhi": "13:50:00"
+      "kolkata": "13:50:00",
+      "patna": "13:50:00",
+      "mathura": "13:50:00"
     },
     "stations": [
-      "bangalore",
-      "jaipur",
-      "delhi"
+      "kolkata",
+      "patna",
+      "mathura"
     ]
   }
 ]

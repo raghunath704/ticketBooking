@@ -2,6 +2,7 @@ package ticket.booking.util;
 
 import org.mindrot.jbcrypt.BCrypt;
 
+//this util file is for hashing password;
 public class UserServiceUtil
 {
     public static String hashPassword(String plainPassword) {
