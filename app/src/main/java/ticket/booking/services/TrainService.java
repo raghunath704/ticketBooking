@@ -25,9 +25,18 @@ public class TrainService {
         //deserialize json to list, TypeReference is used in runtime
         trainList=objectMapper.readValue(trains, new TypeReference<List<Train>>() {});
     }
+
+
     public List<Train> searchTrains(String source, String destination) {
-        return trainList.stream().filter(train -> validTrain(train, source, destination)).collect(Collectors.toList());
+        // This method searches for trains in the trainList that are valid for a given source and destination.
+        // It returns a new List containing only the trains that meet the search criteria.
+
+        return trainList.stream() // Convert the trainList into a Stream to enable functional operations.
+                .filter(train -> validTrain(train, source, destination)) // Filter the stream of trains based on the validTrain method.
+                .collect(Collectors.toList()); // Collect the filtered trains into a new List and return it.
     }
+
+
     // This function adds a new train to the trainList if a train with the same ID does not exist.
     public void addTrain(Train newTrain) {
         // Check if a train with the same trainId already exists
